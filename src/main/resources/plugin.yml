@@ -1,3 +1,8 @@
 name: ChatManager
 version: 1.0.0
 main: com.karahanbuhan.chatmanager.ChatManagerPlugin
+
+commands:
+  kilitle:
+    permission: "chatmanager.lock"
+    permission-message: "Sohbeti kilitlemek için yeterli yetkiniz yok!"
