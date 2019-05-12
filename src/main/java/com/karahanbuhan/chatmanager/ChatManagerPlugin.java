@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 public class ChatManagerPlugin extends JavaPlugin {
 
     private static boolean isChatLocked = false;
+    private static int spamInterval = 1000;
 
     private Logger logger;
 
@@ -48,6 +49,10 @@ public class ChatManagerPlugin extends JavaPlugin {
 
     public static boolean isChatLocked() {
         return isChatLocked;
+    }
+
+    public static int getSpamInterval() {
+        return spamInterval;
     }
 
 }
