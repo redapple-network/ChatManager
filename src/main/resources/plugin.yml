@@ -2,6 +2,29 @@ name: ChatManager
 version: 1.0.0
 main: com.karahanbuhan.chatmanager.ChatManagerPlugin
 
+permissions:
+  chatmanager.*:
+    description: "All ChatManager permissions"
+    children:
+      chatmanager.admin: true
+  chatmanager.admin:
+    description: "ChatManager administration permission"
+    children:
+      chatmanager.lock: true
+      chatmanager.bypass: true
+  chatmanager.lock:
+      description: "Permission which allows locking chat"
+
+    chatmanager.bypass:
+      description: "Bypasses every chat control"
+      children:
+        chatmanager.bypass.lock: true
+        chatmanager.bypass.spam: true
+  chatmanager.bypass.lock:
+    description: "Bypasses chat lock control"
+  chatmanager.bypass.spam:
+      description: "Bypasses spam control"
+
 commands:
   kilitle:
     permission: "chatmanager.lock"
