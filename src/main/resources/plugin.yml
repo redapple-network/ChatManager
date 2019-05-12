@@ -14,12 +14,11 @@ permissions:
       chatmanager.bypass: true
   chatmanager.lock:
       description: "Permission which allows locking chat"
-
-    chatmanager.bypass:
-      description: "Bypasses every chat control"
-      children:
-        chatmanager.bypass.lock: true
-        chatmanager.bypass.spam: true
+  chatmanager.bypass:
+    description: "Bypasses every chat control"
+    children:
+      chatmanager.bypass.lock: true
+      chatmanager.bypass.spam: true
   chatmanager.bypass.lock:
     description: "Bypasses chat lock control"
   chatmanager.bypass.spam:
