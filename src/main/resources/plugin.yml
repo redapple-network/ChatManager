@@ -18,11 +18,8 @@ permissions:
     description: "Bypasses every chat control"
     children:
       chatmanager.bypass.lock: true
-      chatmanager.bypass.spam: true
   chatmanager.bypass.lock:
     description: "Bypasses chat lock control"
-  chatmanager.bypass.spam:
-      description: "Bypasses spam control"
 
 commands:
   kilitle:
